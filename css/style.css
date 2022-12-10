@@ -1,0 +1,215 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;900&family=Lato:wght@700&family=Montserrat:wght@300;500;600&family=Poppins:wght@300;400&family=Wallpoet&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: linear-gradient(0deg, rgba(163,223,223,1) 0%, rgba(228,165,205,1) 100%);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+ul li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: #000;
+}
+/* header */
+header {
+    margin-bottom: 30px;
+    background: #ccc;
+}
+.active-nav::after {
+    background: #333 !important;
+    display: block;
+    content: ' '!important;
+    width: 100% !important;
+    height: 2px !important;
+    transition: width .3s !important;
+}
+.change-lang li a {
+    font-size: 14px;
+}
+.nav-item a{
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/* header end */
+section {
+    padding: 20px;
+}
+.section-title {
+    font-weight: 600;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* section 1 */
+.online__classes {
+    max-width: 75%;
+}
+.sliders img {
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px 50px 0px 50px / 0px 25px 0px 25px;
+}
+.slick-prev::before, .slick-next::before {
+    color:#e70695 !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75 !important;
+    color: #e70695 !important;
+}
+/* section 1 end*/
+/* section 2 */
+.courses__card {
+    box-shadow:  -9px -9px 1px #fdfdfd;
+    transition: 0.2s;
+}
+.courses__card:hover{
+    box-shadow:  -13px -13px 1px #fdfdfd !important;
+    background: #e70695 !important;
+    color: #ccc;
+}
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-text {
+    font-size: 14px;
+}
+/* section 2 end*/
+/* section 3 */
+.section__3_card{
+    width: 25%;
+    border: 0px;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.section__3_card:hover {
+    box-shadow: inset 10px 0 0 0 #54b3d6;
+    color: white;
+}
+.section__3_card img {
+    width: 50%;
+}
+/* section 3 end */
+/* section 4 about us */
+.about__box {
+    padding-top: 120px;
+}
+/* section 4 about us end*/
+/* section 5 rewiews */
+.card__rewiew {
+    margin: 0 auto;
+    width: 50%;
+    padding: 14px 10px;
+}
+.card__rewiew img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.card__rewiew h4 {
+    font-style: italic;
+    font-size: 16px;
+}
+.card__rewiew p {
+    font-size: 14px;
+}
+.carousel-item .active::after {
+    background-color: transparent !important;
+}
+/* section 5 rewiews end */
+/* footer */
+.footer {
+    background-color: #ccc;
+    padding: 26px 0;
+    margin: 80px 0 0 0;
+}
+.footer-box ul li a {
+    font-size: 14px;
+}
+/* footer end */
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 640px) {
+    .courses__cards {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .section__3_card {
+        width: 75%;
+    }
+    .about__box {
+        text-align: center;
+        padding-top: 60px;
+    }
+    .card__rewiew {
+        width: 80%;
+    }
+    .card__rewiew img {
+        width: 60px;
+        height: 60px;
+    }
+    .carousel-control-prev-icon {
+        margin-right: 22px;
+    }
+    .carousel-control-next-icon {
+        margin-left: 22px;
+    }
+}   
+/* Small screen laptops */
+@media only screen and (max-width: 912px) {
+    .courses__cards {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .section__3_card {
+        width: 75%;
+    }
+    .about__box {
+        text-align: center;
+        padding-top: 60px;
+    }
+    .footer-box ul li a {
+        font-size: 12px;
+    }
+    .col-md-4 {
+        padding: 0;
+    }
+}
