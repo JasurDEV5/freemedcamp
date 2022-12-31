@@ -67,7 +67,7 @@ section {
 
 /* section 1 */
 .online__classes {
-    max-width: 75%;
+    width: 75%;
 }
 .sliders img {
     padding: 0 10px;
@@ -165,6 +165,9 @@ section {
 
 /* Mobile */
 @media only screen and (max-width: 640px) {
+    .online__classes {
+        width: 100%;
+    }
     .courses__cards {
         flex-direction: column;
         row-gap: 20px;
